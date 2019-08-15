@@ -1,38 +1,34 @@
 // Navigation Styles here
-// header{
-//     width: 100%;
-//     margin: 1% auto;
-// }
-    .top-nav{
-        display: flex;
-        width: 90%;
-        justify-content: space-between;
-        margin: 2% auto 0px;
-        border-bottom: 1px dashed gray;
-        .header-h{
-            width: 70%;
-            padding: 0px 50px;
-            
-        }
-        .nav-bar{
-            width: 30%;
-            justify-content: space-evenly;
-            display: flex;
-            
-            a{
-                text-decoration: none;
-                color: black;
-                font-family: @p-font;
-                margin: auto 3%;
-            } //end of a
 
-        } //end of nav bar
-        
-    }//end of top nav
-    
-    .header-photo{
+header{
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px dashed grey;
+    padding: 1% 5%;
+
+    @media @mobile{
         width: 100%;
-        margin: 0 auto;
+        text-align: center;
     }
+    nav a{
+        width: 100%;
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: black;
+        padding-right: 30px;
+        padding-top: 2px;
+    }// end a
+    div h1{
+        
+        align-items: center;
+    }
+}//end header
 
+.header-photo{
+    display: flex;
+    
+    
+}
 
