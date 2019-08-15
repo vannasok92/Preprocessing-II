@@ -33,6 +33,10 @@
 
       img {
         border-radius: 10px;
+        
+        @media @mobile{
+          width: 100%;
+        }
       }
     }
   }
@@ -42,13 +46,16 @@
     border-bottom: 2px dashed @navigation-border;
     
     @media @mobile{
-      flex-direction: column;
+      flex-direction: column-reverse;
       width: 100%;
     }
 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      @media @mobile{
+        width: 100%;
+      }
     }
 
     .img-content {
@@ -80,8 +87,23 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
       @media @mobile{
         width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+      }
+
+      .sign-btn{
+        .custom-btn();
+
+        @media @mobile{
+          padding: 5px 100px;
+          text-align: center;
+        }
       }
       
     }//destination
@@ -89,7 +111,7 @@
   }//content picker
 }// home
 
-.btn .sign-btn{
-  .custom-btn;
+// .btn .sign-btn{
+//   .custom-btn();
   
-}
+// }

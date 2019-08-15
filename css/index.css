@@ -175,11 +175,21 @@ header {
   justify-content: space-between;
   border-bottom: 1px dashed grey;
   padding: 1% 5%;
+  margin: 0 auto;
 }
 @media (max-width: 500px) {
   header {
     width: 100%;
     text-align: center;
+  }
+}
+header div h1 {
+  align-items: center;
+}
+@media (max-width: 500px) {
+  header div h1 {
+    width: 100%;
+    align-items: center;
   }
 }
 header nav a {
@@ -190,11 +200,10 @@ header nav a {
   padding-right: 30px;
   padding-top: 2px;
 }
-header div h1 {
-  align-items: center;
-}
-.header-photo {
-  display: flex;
+@media (max-width: 500px) {
+  header nav a {
+    justify-content: space-evenly;
+  }
 }
 .footer {
   width: 100%;
@@ -243,19 +252,29 @@ header div h1 {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 100%;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
 @media (max-width: 500px) {
   .home .inverse-content {
-    flex-direction: column;
+    flex-direction: column-reverse;
     width: 100%;
   }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    width: 100%;
+  }
 }
 .home .inverse-content .img-content {
   padding-right: 1%;
@@ -283,18 +302,30 @@ header div h1 {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
   }
 }
-.btn .sign-btn {
+.home .content-pick .destination .sign-btn {
   background-color: #20B2AA;
   color: white;
   border-radius: 10px;
   padding: 10px 50px;
 }
-.btn .sign-btn:hover {
+.home .content-pick .destination .sign-btn:hover {
   background-color: #1c9c95;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .sign-btn {
+    padding: 5px 100px;
+    text-align: center;
+  }
 }
